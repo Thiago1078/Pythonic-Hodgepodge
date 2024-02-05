@@ -4,7 +4,8 @@
 return text files containing pages containing select terms
 after doing both a direct and then fuzzy search with a 67%
 threshold for terms relating to Rachmaninoff,
-friend of Igor Sikorsky. Meant to be in the same directory as the files being data scraped.'''
+friend of Igor Sikorsky. Meant to be in the same directory as the files being data scraped.
+Meant to increase accuracy despite the imperfect transcribing process of Adobe Acrobat's OCR.'''
 
 '''KNOWN ISSUES:
 - When iterating through large volumes of PDFs, will not execute successfully if one of those files has no valid EOF marker.
