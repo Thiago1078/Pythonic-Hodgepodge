@@ -2,10 +2,8 @@
 
 '''This program is designed to be modified manually in order to be able to read OCR'd PDFs and then
 return text files containing pages containing select terms
-after doing both a direct and then fuzzy search with a 67%
-threshold for terms relating to Rachmaninoff,
-friend of Igor Sikorsky. Meant to be in the same directory as the files being data scraped.
-Meant to increase accuracy despite the imperfect transcribing process of Adobe Acrobat's OCR.'''
+after doing both a direct and then fuzzy search (in order to hopefully find places where the OCR improperly read 'Rachmaninoff' with a 67%
+threshold.'''
 
 '''KNOWN ISSUES:
 - When iterating through large volumes of PDFs, will not execute successfully if one of those files has no valid EOF marker.
