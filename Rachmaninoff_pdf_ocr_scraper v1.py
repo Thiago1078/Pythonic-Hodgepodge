@@ -1,20 +1,8 @@
 # Thiago R. - 2/2/2024
 
-'''This program is designed to be modified manually in order to be able to read OCR'd PDFs and then
-return text files containing pages containing select terms
-after doing both a direct and then fuzzy search with a 65%
-threshold for terms relating to Rachmaninoff,
-friend of Igor Sikorsky. Meant to be in the same directory as the files being data scraped.'''
-
-'''KNOWN ISSUES:
-- When iterating through large volumes of PDFs, will not execute successfully if one of those files has no valid EOF marker.
- * Could be fixed by re-OCRing all scannned files separately, but unsure yet.
-'''
-
 from PyPDF2 import PdfReader
 import os 
 from fuzzywuzzy import fuzz
-
 
 # Delete any pre-existing text files to avoid appending new iterations of content after updating the algorithim for new searches
 
